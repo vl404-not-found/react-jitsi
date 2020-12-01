@@ -6,7 +6,7 @@ export const importJitsiApi = (): Promise<void> => new Promise(async (resolve) =
         const script = document.createElement("script"); 
 
         script.setAttribute("type", "text/javascript");
-        script.setAttribute("src", "https://meet.jit.si/external_api.js");
+        script.setAttribute("src", "/js/lib-jitsi-meet.min.js");
 
         head.addEventListener("load", function(event: any) {
             if (event.target.nodeName === "SCRIPT") {
