@@ -6,7 +6,7 @@ export const importJitsiApi = (): Promise<void> => new Promise(async (resolve) =
         const script = document.createElement("script"); 
 
         script.setAttribute("type", "text/javascript");
-        script.setAttribute("src", "https://raw.githubusercontent.com/vl404-not-found/react-jitsi/master/assets/lib-jitsi-meet.min.js");
+        script.setAttribute("src", "https://vladsh.space/static/js/jitsi/lib-jitsi-meet.min.js");
 
         head.addEventListener("load", function(event: any) {
             if (event.target.nodeName === "SCRIPT") {
